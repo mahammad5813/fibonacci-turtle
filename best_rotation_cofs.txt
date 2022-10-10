@@ -1,0 +1,3 @@
+rotation coefficient = 47.88   fd_magn = 10
+rotation coefficient = 10.9    fd_magn = 10
+rotation coefficient = 10.44   fd_magn = 10
