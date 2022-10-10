@@ -92,8 +92,8 @@ while mainloop:
         bottom_left(initial)
     rotation_coefficient = float(input("Enter the rotation coefficient> "))
     magnitude_fd = int(input("Enter forward magnitude> "))
-    d_color = input("Enter the color of the drawing> ").lower()
-    bg_color = input("Enter the background color> ").lower()
+    d_color = input("*optional* Enter the color of the drawing> ").lower()
+    bg_color = input("*optional* Enter the background color> ").lower()
     if d_color:
         t.color(d_color)
     if bg_color:
