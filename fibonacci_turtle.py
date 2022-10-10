@@ -98,53 +98,29 @@ while mainloop:
         t.color(d_color)
     if bg_color:
         turtle.Screen().bgcolor(bg_color)
-    mode = input('''
-    With refresh: 0
-    Without refresh: 1
-    >> ''')
-    if mode == "0":
-        while True:
-            time.sleep(0.00001)
-            if keyboard.is_pressed("h"):
-                t.hideturtle()
-            if keyboard.is_pressed("v"):
-                t.showturtle()
-            if keyboard.is_pressed("q"):
-                mainloop = False
-                break
-            if keyboard.is_pressed("r"):
-                t.clear()
-                t.penup()
-                t.home()
-                break
-            number = list1[-1] + list1[-2]
-            list1.append(number)
-            t.circle(magnitude_fd, 90)
-            t._rotate(number%360-rotation_coefficient)
-    elif mode == "1":
-        step = 0
-        while True:
-            step+=1
-            if step == 100:
-                turtle.update()
-                step = 0
-            # time.sleep(0.00001)
-            turtle.tracer(0,0)
-            if keyboard.is_pressed("h"):
-                t.hideturtle()
-            if keyboard.is_pressed("v"):
-                t.showturtle()
-            if keyboard.is_pressed("f"):
-                turtle.update()
-            if keyboard.is_pressed("q"):
-                mainloop = False
-                break
-            if keyboard.is_pressed("r"):
-                t.clear()
-                t.penup()
-                t.home()
-                break
-            number = list1[-1] + list1[-2]
-            list1.append(number)
-            t.circle(magnitude_fd, 90)
-            t._rotate(number%360-rotation_coefficient)
+    step = 0
+    while True:
+        step+=1
+        if step == 100:
+            turtle.update()
+            step = 0
+        # time.sleep(0.00001)
+        turtle.tracer(0,0)
+        if keyboard.is_pressed("h"):
+            t.hideturtle()
+        if keyboard.is_pressed("v"):
+            t.showturtle()
+        if keyboard.is_pressed("f"):
+            turtle.update()
+        if keyboard.is_pressed("q"):
+            mainloop = False
+            break
+        if keyboard.is_pressed("r"):
+            t.clear()
+            t.penup()
+            t.home()
+            break
+        number = list1[-1] + list1[-2]
+        list1.append(number)
+        t.circle(magnitude_fd, 90)
+        t._rotate(number%360-rotation_coefficient)
