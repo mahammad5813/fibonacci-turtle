@@ -1,5 +1,5 @@
-import turtle
-import keyboard, time
+import turtle, keyboard
+
 t = turtle.Turtle()
 t.speed(1000)
 def top_right(magnitude):   
@@ -104,14 +104,11 @@ while mainloop:
         if step == 100:
             turtle.update()
             step = 0
-        # time.sleep(0.00001)
         turtle.tracer(0,0)
         if keyboard.is_pressed("h"):
             t.hideturtle()
         if keyboard.is_pressed("v"):
             t.showturtle()
-        if keyboard.is_pressed("f"):
-            turtle.update()
         if keyboard.is_pressed("q"):
             mainloop = False
             break
