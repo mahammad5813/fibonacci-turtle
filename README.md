@@ -1,5 +1,5 @@
 # fibonacci-turtle
-a python code that uses fibonacci series to draw different shapes
+A python code that uses fibonacci series to draw different shapes
 
 #1 choose where you want to start
 #2 choose how far the turtle will start to the direction you chose
